@@ -1,0 +1,21 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div id = "createListView">
+    <h1>ToDoList</h1>
+    <input type = "text" id="todolistName" placeholder = "New List" />
+    <button onclick="createList()">Create</button>
+</div>
+<div id="TodoListDiv" style="display:none">
+    <h1 id="todolistTitle">New List</h1>
+    <input id="newItemName" type = "text" placeholder = "New Item" />
+    <button onclick="addItem()">Add</button>
+    <ul id="TodolistItems">
+        <li>Read Book<button>D</button><button>C</button></li>
+        <li>Walk Dogs<button>D</button><button>C</button></li>
+        <li>Buy Products<button>D</button><button>C</button></li>
+    </ul>
+</div>
